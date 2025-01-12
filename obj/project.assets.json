@@ -1,0 +1,195 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "ExMod.Exiled/9.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net48/Assembly-CSharp-Publicized.dll": {},
+          "lib/net48/CommandSystem.Core.dll": {},
+          "lib/net48/Exiled.API.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/Exiled.CreditTags.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/Exiled.CustomItems.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/Exiled.CustomRoles.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/Exiled.Events.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/Exiled.Loader.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/Exiled.Permissions.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/NorthwoodLib.dll": {},
+          "lib/net48/PluginAPI.dll": {},
+          "lib/net48/YamlDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/net48/Assembly-CSharp-Publicized.dll": {},
+          "lib/net48/CommandSystem.Core.dll": {},
+          "lib/net48/Exiled.API.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/Exiled.CreditTags.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/Exiled.CustomItems.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/Exiled.CustomRoles.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/Exiled.Events.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/Exiled.Loader.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/Exiled.Permissions.dll": {
+            "related": ".xml"
+          },
+          "lib/net48/NorthwoodLib.dll": {},
+          "lib/net48/PluginAPI.dll": {},
+          "lib/net48/YamlDotNet.dll": {}
+        }
+      },
+      "StyleCop.Analyzers/1.1.118": {
+        "type": "package"
+      }
+    }
+  },
+  "libraries": {
+    "ExMod.Exiled/9.2.1": {
+      "sha512": "YEzDVFHmzVJkMgNjlqbxdR+XjNd2N5zDJrtbZUrdA7Q/e8+DBJj2EsazhLYxZZBvnqtAmg1phAxvA6fzPKd62w==",
+      "type": "package",
+      "path": "exmod.exiled/9.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "exmod.exiled.9.2.1.nupkg.sha512",
+        "exmod.exiled.nuspec",
+        "images/Exiled_Icon.png",
+        "lib/net48/Assembly-CSharp-Publicized.dll",
+        "lib/net48/CommandSystem.Core.dll",
+        "lib/net48/Exiled.API.dll",
+        "lib/net48/Exiled.API.xml",
+        "lib/net48/Exiled.CreditTags.dll",
+        "lib/net48/Exiled.CreditTags.xml",
+        "lib/net48/Exiled.CustomItems.dll",
+        "lib/net48/Exiled.CustomItems.xml",
+        "lib/net48/Exiled.CustomRoles.dll",
+        "lib/net48/Exiled.CustomRoles.xml",
+        "lib/net48/Exiled.Events.dll",
+        "lib/net48/Exiled.Events.xml",
+        "lib/net48/Exiled.Loader.dll",
+        "lib/net48/Exiled.Loader.xml",
+        "lib/net48/Exiled.Permissions.dll",
+        "lib/net48/Exiled.Permissions.xml",
+        "lib/net48/NorthwoodLib.dll",
+        "lib/net48/PluginAPI.dll",
+        "lib/net48/YamlDotNet.dll"
+      ]
+    },
+    "StyleCop.Analyzers/1.1.118": {
+      "sha512": "Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
+      "type": "package",
+      "path": "stylecop.analyzers/1.1.118",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "THIRD-PARTY-NOTICES.txt",
+        "analyzers/dotnet/cs/StyleCop.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/StyleCop.Analyzers.dll",
+        "analyzers/dotnet/cs/de-DE/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/en-GB/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/es-MX/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/fr-FR/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pl-PL/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pt-BR/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/ru-RU/StyleCop.Analyzers.resources.dll",
+        "stylecop.analyzers.1.1.118.nupkg.sha512",
+        "stylecop.analyzers.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "ExMod.Exiled >= 9.2.1",
+      "StyleCop.Analyzers >= 1.1.118"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\moncef\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\moncef\\Desktop\\بلغنات نادرة\\PhaseGun-main\\PhaseGun\\PhaseGun.csproj",
+      "projectName": "PhaseGun",
+      "projectPath": "C:\\Users\\moncef\\Desktop\\بلغنات نادرة\\PhaseGun-main\\PhaseGun\\PhaseGun.csproj",
+      "packagesPath": "C:\\Users\\moncef\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\moncef\\Desktop\\بلغنات نادرة\\PhaseGun-main\\PhaseGun\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\moncef\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Users\\moncef\\AppData\\Roaming\\NuGet\\EXILED": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net48": {
+        "targetAlias": "net48",
+        "dependencies": {
+          "ExMod.Exiled": {
+            "target": "Package",
+            "version": "[9.2.1, )"
+          },
+          "StyleCop.Analyzers": {
+            "target": "Package",
+            "version": "[1.1.118, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

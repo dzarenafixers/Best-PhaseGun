@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PhaseGun</name>
+    </assembly>
+    <members>
+        <member name="T:PhaseGun.Config">
+            <inheritdoc />
+        </member>
+        <member name="P:PhaseGun.Config.IsEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="P:PhaseGun.Config.PhaseGun">
+            <summary>
+            Gets or sets a configurable instance of the <see cref="T:PhaseGun.CustomItems.PhaseGunItem"/> class.
+            </summary>
+        </member>
+        <member name="T:PhaseGun.CustomItems.PhaseGunItem">
+            <inheritdoc />
+        </member>
+        <member name="P:PhaseGun.CustomItems.PhaseGunItem.ShouldMessageOnGban">
+            <inheritdoc />
+        </member>
+        <member name="P:PhaseGun.CustomItems.PhaseGunItem.Id">
+            <inheritdoc />
+        </member>
+        <member name="P:PhaseGun.CustomItems.PhaseGunItem.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:PhaseGun.CustomItems.PhaseGunItem.Description">
+            <inheritdoc />
+        </member>
+        <member name="P:PhaseGun.CustomItems.PhaseGunItem.Weight">
+            <inheritdoc />
+        </member>
+        <member name="P:PhaseGun.CustomItems.PhaseGunItem.SpawnProperties">
+            <inheritdoc/>
+        </member>
+        <member name="P:PhaseGun.CustomItems.PhaseGunItem.Type">
+            <inheritdoc />
+        </member>
+        <member name="P:PhaseGun.CustomItems.PhaseGunItem.Damage">
+            <inheritdoc />
+        </member>
+        <member name="P:PhaseGun.CustomItems.PhaseGunItem.ClipSize">
+            <inheritdoc />
+        </member>
+        <member name="P:PhaseGun.CustomItems.PhaseGunItem.AffectTutorials">
+            <summary>
+            Gets or sets a value indicating whether the phase gun should affect tutorials.
+            </summary>
+        </member>
+        <member name="P:PhaseGun.CustomItems.PhaseGunItem.VoidDuration">
+            <summary>
+            Gets or sets the amount of time a hit player will be sent to the void.
+            </summary>
+        </member>
+        <member name="P:PhaseGun.CustomItems.PhaseGunItem.Effects">
+            <summary>
+            Gets or sets the effects to apply to players when they are sent to the void.
+            </summary>
+        </member>
+        <member name="M:PhaseGun.CustomItems.PhaseGunItem.SubscribeEvents">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhaseGun.CustomItems.PhaseGunItem.UnsubscribeEvents">
+            <inheritdoc />
+        </member>
+        <member name="M:PhaseGun.CustomItems.PhaseGunItem.OnShooting(Exiled.Events.EventArgs.Player.ShootingEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:PhaseGun.CustomItems.PhaseGunItem.OnReloading(Exiled.Events.EventArgs.Player.ReloadingWeaponEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="T:PhaseGun.Models.ConfiguredEffect">
+            <summary>
+            Represents an effect with a configured duration and intensity.
+            </summary>
+        </member>
+        <member name="M:PhaseGun.Models.ConfiguredEffect.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:PhaseGun.Models.ConfiguredEffect"/> class.
+            </summary>
+        </member>
+        <member name="M:PhaseGun.Models.ConfiguredEffect.#ctor(Exiled.API.Enums.EffectType,System.Byte)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PhaseGun.Models.ConfiguredEffect"/> class.
+            </summary>
+            <param name="effectType"><inheritdoc cref="T:Exiled.API.Enums.EffectType"/></param>
+            <param name="intensity"><inheritdoc cref="P:PhaseGun.Models.ConfiguredEffect.Intensity"/></param>
+        </member>
+        <member name="P:PhaseGun.Models.ConfiguredEffect.Type">
+            <summary>
+            Gets or sets the type of effect.
+            </summary>
+        </member>
+        <member name="P:PhaseGun.Models.ConfiguredEffect.Intensity">
+            <summary>
+            Gets or sets the intensity of the effect.
+            </summary>
+        </member>
+        <member name="M:PhaseGun.Models.ConfiguredEffect.Apply(Exiled.API.Features.Player)">
+            <summary>
+            Applies the configured effect to the player.
+            </summary>
+            <param name="player">The player to apply the effect to.</param>
+        </member>
+        <member name="T:PhaseGun.Plugin">
+            <inheritdoc />
+        </member>
+        <member name="P:PhaseGun.Plugin.Author">
+            <inheritdoc/>
+        </member>
+        <member name="P:PhaseGun.Plugin.Name">
+            <inheritdoc/>
+        </member>
+        <member name="P:PhaseGun.Plugin.Prefix">
+            <inheritdoc/>
+        </member>
+        <member name="P:PhaseGun.Plugin.Version">
+            <inheritdoc/>
+        </member>
+        <member name="P:PhaseGun.Plugin.RequiredExiledVersion">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhaseGun.Plugin.OnEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="M:PhaseGun.Plugin.OnDisabled">
+            <inheritdoc/>
+        </member>
+        <member name="T:PhaseGun.VoidManager">
+            <summary>
+            Handles the void aspect of the <see cref="T:PhaseGun.CustomItems.PhaseGunItem"/>.
+            </summary>
+        </member>
+        <member name="M:PhaseGun.VoidManager.#ctor(PhaseGun.CustomItems.PhaseGunItem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PhaseGun.VoidManager"/> class.
+            </summary>
+            <param name="phaseGun">An instance of the <see cref="T:PhaseGun.CustomItems.PhaseGunItem"/> class.</param>
+        </member>
+        <member name="P:PhaseGun.VoidManager.CurrentlyVoiding">
+            <summary>
+            Gets the players that are currently considered to be in the void.
+            </summary>
+        </member>
+        <member name="M:PhaseGun.VoidManager.Subscribe">
+            <summary>
+            Subscribes to all required events.
+            </summary>
+        </member>
+        <member name="M:PhaseGun.VoidManager.Unsubscribe">
+            <summary>
+            Unsubscribes from all required events.
+            </summary>
+        </member>
+        <member name="M:PhaseGun.VoidManager.Start(Exiled.API.Features.Player)">
+            <summary>
+            Starts the void sequence for the specified player.
+            </summary>
+            <param name="player">The player to start voiding.</param>
+        </member>
+    </members>
+</doc>

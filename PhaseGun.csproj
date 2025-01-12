@@ -1,0 +1,380 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>PhaseGun</AssemblyName>
+        <TargetFramework>net48</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Authors>Build</Authors>
+        <Version>1.0.0</Version>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ExMod.Exiled" Version="9.2.1" />
+        <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="0Harmony">
+        <HintPath>..\..\..\المكاتب والمراجع\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="Assembly-CSharp-firstpass">
+        <HintPath>..\..\..\المكاتب والمراجع\Assembly-CSharp-firstpass.dll</HintPath>
+      </Reference>
+      <Reference Include="BouncyCastle.Cryptography">
+        <HintPath>..\..\..\المكاتب والمراجع\BouncyCastle.Cryptography.dll</HintPath>
+      </Reference>
+      <Reference Include="Caress">
+        <HintPath>..\..\..\المكاتب والمراجع\Caress.dll</HintPath>
+      </Reference>
+      <Reference Include="CommandSystem.Core">
+        <HintPath>..\..\..\المكاتب والمراجع\CommandSystem.Core.dll</HintPath>
+      </Reference>
+      <Reference Include="DnsClient">
+        <HintPath>..\..\..\المكاتب والمراجع\DnsClient.dll</HintPath>
+      </Reference>
+      <Reference Include="Facepunch.Steamworks.Win64">
+        <HintPath>..\..\..\المكاتب والمراجع\Facepunch.Steamworks.Win64.dll</HintPath>
+      </Reference>
+      <Reference Include="Mirror">
+        <HintPath>..\..\..\المكاتب والمراجع\Mirror.dll</HintPath>
+      </Reference>
+      <Reference Include="Mirror.Components">
+        <HintPath>..\..\..\المكاتب والمراجع\Mirror.Components.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil">
+        <HintPath>..\..\..\المكاتب والمراجع\Mono.Cecil.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil.Mdb">
+        <HintPath>..\..\..\المكاتب والمراجع\Mono.Cecil.Mdb.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil.Pdb">
+        <HintPath>..\..\..\المكاتب والمراجع\Mono.Cecil.Pdb.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Cecil.Rocks">
+        <HintPath>..\..\..\المكاتب والمراجع\Mono.Cecil.Rocks.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Posix">
+        <HintPath>..\..\..\المكاتب والمراجع\Mono.Posix.dll</HintPath>
+      </Reference>
+      <Reference Include="Mono.Security">
+        <HintPath>..\..\..\المكاتب والمراجع\Mono.Security.dll</HintPath>
+      </Reference>
+      <Reference Include="mscorlib">
+        <HintPath>..\..\..\المكاتب والمراجع\mscorlib.dll</HintPath>
+      </Reference>
+      <Reference Include="netstandard">
+        <HintPath>..\..\..\المكاتب والمراجع\netstandard.dll</HintPath>
+      </Reference>
+      <Reference Include="NorthwoodLib">
+        <HintPath>..\..\..\المكاتب والمراجع\NorthwoodLib.dll</HintPath>
+      </Reference>
+      <Reference Include="PluginAPI">
+        <HintPath>..\..\..\المكاتب والمراجع\PluginAPI.dll</HintPath>
+      </Reference>
+      <Reference Include="Pooling">
+        <HintPath>..\..\..\المكاتب والمراجع\Pooling.dll</HintPath>
+      </Reference>
+      <Reference Include="System.ComponentModel.Composition">
+        <HintPath>..\..\..\المكاتب والمراجع\System.ComponentModel.Composition.dll</HintPath>
+      </Reference>
+      <Reference Include="System.ComponentModel.DataAnnotations">
+        <HintPath>..\..\..\المكاتب والمراجع\System.ComponentModel.DataAnnotations.dll</HintPath>
+      </Reference>
+      <Reference Include="System.Configuration">
+        <HintPath>..\..\..\المكاتب والمراجع\System.Configuration.dll</HintPath>
+      </Reference>
+      <Reference Include="System.Data.DataSetExtensions">
+        <HintPath>..\..\..\المكاتب والمراجع\System.Data.DataSetExtensions.dll</HintPath>
+      </Reference>
+      <Reference Include="System.EnterpriseServices">
+        <HintPath>..\..\..\المكاتب والمراجع\System.EnterpriseServices.dll</HintPath>
+      </Reference>
+      <Reference Include="System.IO.Compression">
+        <HintPath>..\..\..\المكاتب والمراجع\System.IO.Compression.dll</HintPath>
+      </Reference>
+      <Reference Include="System.Net.Http">
+        <HintPath>..\..\..\المكاتب والمراجع\System.Net.Http.dll</HintPath>
+      </Reference>
+      <Reference Include="System.Runtime">
+        <HintPath>..\..\..\المكاتب والمراجع\System.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="System.Runtime.CompilerServices.Unsafe">
+        <HintPath>..\..\..\المكاتب والمراجع\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      </Reference>
+      <Reference Include="System.Security">
+        <HintPath>..\..\..\المكاتب والمراجع\System.Security.dll</HintPath>
+      </Reference>
+      <Reference Include="System.ServiceModel.Internals">
+        <HintPath>..\..\..\المكاتب والمراجع\System.ServiceModel.Internals.dll</HintPath>
+      </Reference>
+      <Reference Include="System.Transactions">
+        <HintPath>..\..\..\المكاتب والمراجع\System.Transactions.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Burst">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.Burst.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Burst.Unsafe">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.Burst.Unsafe.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Mathematics">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.Mathematics.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.ProBuilder">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.ProBuilder.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.ProBuilder.Csg">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.ProBuilder.Csg.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.ProBuilder.KdTree">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.ProBuilder.KdTree.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.ProBuilder.Poly2Tri">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.ProBuilder.Poly2Tri.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.ProBuilder.Stl">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.ProBuilder.Stl.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.RenderPipelines.Core.Runtime">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.TextMeshPro">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.TextMeshPro.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.Timeline">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.Timeline.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.VisualEffectGraph.Runtime">
+        <HintPath>..\..\..\المكاتب والمراجع\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AccessibilityModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.AccessibilityModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AIModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.AIModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AndroidJNIModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.AndroidJNIModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AnimationModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.AnimationModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ARModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.ARModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AssetBundleModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.AssetBundleModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AudioModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.AudioModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ClothModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.ClothModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ClusterInputModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.ClusterInputModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ClusterRendererModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.ClusterRendererModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CrashReportingModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.CrashReportingModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.DirectorModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.DirectorModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.DSPGraphModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.DSPGraphModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.GameCenterModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.GameCenterModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.GIModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.GIModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.GridModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.GridModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.HotReloadModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.HotReloadModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ImageConversionModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.ImageConversionModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.IMGUIModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.IMGUIModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.InputLegacyModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.InputLegacyModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.InputModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.InputModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.JSONSerializeModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.JSONSerializeModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.LocalizationModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.LocalizationModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.NVIDIAModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.NVIDIAModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ParticleSystemModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.ParticleSystemModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.PerformanceReportingModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.Physics2DModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.Physics2DModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.PhysicsModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.PhysicsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ProfilerModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.ProfilerModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ScreenCaptureModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.SharedInternalsModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.SharedInternalsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.SpriteMaskModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.SpriteMaskModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.SpriteShapeModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.SpriteShapeModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.StreamingModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.StreamingModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.SubstanceModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.SubstanceModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.SubsystemsModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.SubsystemsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TerrainModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.TerrainModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TerrainPhysicsModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TextCoreFontEngineModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TextCoreTextEngineModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TextRenderingModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.TextRenderingModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TilemapModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.TilemapModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.TLSModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.TLSModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UI">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UI.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UIElementsModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UIElementsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UIElementsNativeModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UIElementsNativeModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UIModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UIModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UmbraModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UmbraModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UNETModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UNETModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityAnalyticsModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityConnectModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UnityConnectModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityCurlModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UnityCurlModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityTestProtocolModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityWebRequestModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.VehiclesModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.VehiclesModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.VFXModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.VFXModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.VideoModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.VideoModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.VirtualTexturingModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.VirtualTexturingModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.VRModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.VRModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.WindModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.WindModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.XRModule">
+        <HintPath>..\..\..\المكاتب والمراجع\UnityEngine.XRModule.dll</HintPath>
+      </Reference>
+      <Reference Include="YamlDotNet">
+        <HintPath>..\..\..\المكاتب والمراجع\YamlDotNet.dll</HintPath>
+      </Reference>
+      <Reference Include="zxing">
+        <HintPath>..\..\..\المكاتب والمراجع\zxing.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
